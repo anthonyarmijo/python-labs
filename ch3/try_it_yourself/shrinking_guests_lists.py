@@ -1,0 +1,51 @@
+guest_list = ['Adriana', 'Mom', 'Dad', 'Jackie']
+print(f"{guest_list[0]}, you are cordially invited to dinner.")
+print(f"{guest_list[1]}, you are cordially invited to dinner.")
+print(f"{guest_list[2]}, you are cordially invited to dinner.")
+print(f"{guest_list[3]}, you are cordially invited to dinner.")
+print("\n ")
+print(f"{guest_list[3]}, you are cordially invited to dinner.")
+del guest_list[3]
+guest_list.insert(3, "James")
+print("\n ")
+print(f"{guest_list[0]}, you are cordially invited to dinner.")
+print(f"{guest_list[1]}, you are cordially invited to dinner.")
+print(f"{guest_list[2]}, you are cordially invited to dinner.")
+print(f"{guest_list[3]}, you are cordially invited to dinner.")
+print("\n ")
+print("There are 3 more seats available!")
+print("\n ")
+guest_list.insert(0, "Bob")
+guest_list.insert(3, "Tim")
+guest_list.append("Last")
+print(f"{guest_list[0]}, you are cordially invited to dinner.")
+print(f"{guest_list[1]}, you are cordially invited to dinner.")
+print(f"{guest_list[2]}, you are cordially invited to dinner.")
+print(f"{guest_list[3]}, you are cordially invited to dinner.")
+print(f"{guest_list[4]}, you are cordially invited to dinner.")
+print(f"{guest_list[5]}, you are cordially invited to dinner.")
+print(f"{guest_list[6]}, you are cordially invited to dinner.")
+print("\n ")
+print("Turns out, there are only 2 seats after all...")
+print("\n ")
+
+pop1 = guest_list.pop()
+pop2 = guest_list.pop()
+pop3 = guest_list.pop()
+pop4 = guest_list.pop()
+pop5 = guest_list.pop()
+
+print(f"{pop1}, sorry, you are officially UNINVITED!")
+print(f"{pop2}, sorry, you are officially UNINVITED!")
+print(f"{pop3}, sorry, you are officially UNINVITED!")
+print(f"{pop4}, sorry, you are officially UNINVITED!")
+print(f"{pop5}, sorry, you are officially UNINVITED!")
+
+print(f"\n{guest_list[0]}, you are still invited.")
+print(f"{guest_list[1]}, you are still invited.")
+
+del guest_list[1]
+del guest_list[0]
+print("\n ")
+
+print(guest_list)
